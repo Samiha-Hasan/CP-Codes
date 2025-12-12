@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,l,r,cl=0,cr=0;
+    cin>>n;
+    while(n--){
+        cin>>l>>r;
+        cl+=l; cr+=r;
+    }
+    cout<<min(cl, n-cl) + min(cr, n-cr);
+}
