@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int n; cin>>n;
+    map<int,int> mp;
+    int x, mx=0;
+    while(n--){
+        cin>>x;
+        mp[x]++;
+        mx = max(mx, mp[x]);
+    }
+    cout<<mx;
+}
