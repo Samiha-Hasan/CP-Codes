@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int t; cin>>t;
+    while(t--){
+        vector<int>a(4);
+        for(int &x:a) cin>>x;
+        int mx1=max(a[0],a[1]);
+        int mx2=max(a[2],a[3]);
+        sort(a.begin(),a.end());
+        cout<<((mx1==a[2] && mx2==a[3])?"YES\n":"NO\n");
+    }
+}
